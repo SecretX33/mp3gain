@@ -29,3 +29,7 @@ meson setup build
 ## Always build reconfiguring build
 
 Use the script `build.bat` in `scripts` folder.
+
+## Integration with IDEs
+
+There is build script that is meant to be run directly by IDEs, you can find them in the `scripts/ide` folder. This is what I personally prefer and use.

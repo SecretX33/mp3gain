@@ -10,12 +10,8 @@ mp3gain_sources = [
     'rg_error.c',
 ]
 
-cpp_args = []
 if host_machine.system() == 'windows'
-    cpp_args += ['WIN32']
+    add_project_arguments('-D', 'WIN32', language: ['c'])
 endif
-joined_cpp_args = ' '.join(cpp_args)
-
-add_project_arguments('-D', joined_cpp_args, language: ['c'])
 
 executable('mp3gain', mp3gain_sources)

@@ -64,6 +64,7 @@
 
 #ifdef WIN32
 #include <io.h>
+#include <windows.h>
 #define SWITCH_CHAR '/'
 #else
 /* time stamp preservation when using temp file */
@@ -95,7 +96,7 @@ unsigned char maxAmpOnly;
 unsigned char *minGain;
 unsigned char *maxGain;
 
-#include <mpg123.h>
+#include "mpg123/mpg123.h"
 #include "gain_analysis.h"
 #endif
 
